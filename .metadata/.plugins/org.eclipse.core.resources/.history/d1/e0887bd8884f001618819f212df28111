@@ -1,0 +1,18 @@
+package com.boot.roy_boot.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import io.undertow.attribute.RequestMethodAttribute;
+
+@RestController
+@RequestMapping("api/v1")
+public class FindShipReckContainer {
+	
+	@RequestMapping(value="" method=RequestMethod.GET)
+	public void shipreckList(){
+		
+		
+	}
+
+}

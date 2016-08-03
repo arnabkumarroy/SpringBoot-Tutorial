@@ -1,0 +1,39 @@
+package com.boot.roy_boot.controller;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.boot.roy_boot.model.Shipwreck;
+
+@RestController
+@RequestMapping("api/v1/")
+public class FindShipReckContainer {
+	
+	@RequestMapping(value="shipwrecks", method= RequestMethod.GET)
+	public List<Shipwreck> shipreckList(){
+		
+		return ShipwreckStub.list();
+	}
+	
+	@RequestMapping(value="shipwrecks/{id}", method= RequestMethod.POST)
+	public Shipwreck shipreckList(Shipwreck wreck){
+		
+		return ShipwreckStub.create(wreck);
+	}
+	
+	@RequestMapping(value="shipwrecks/{id}", method= RequestMethod.DELETE)
+	public Shipwreck shipreckList(Long id){
+		
+		return ShipwreckStub.delete(id);
+	}
+	
+	@RequestMapping(value="shipwrecks/{id}", method= RequestMethod.PUT)
+	public Shipwreck shipreckList(Long id){
+		
+		return ShipwreckStub.delete(id);
+	}
+
+}
