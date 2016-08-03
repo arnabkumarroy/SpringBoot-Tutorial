@@ -26,7 +26,6 @@
         <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
     
-    <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
     <!-- Adding the Spring JPA plugin -->
     <dependency>
     	<groupId>org.springframework.boot</groupId>
