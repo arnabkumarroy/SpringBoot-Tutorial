@@ -1,0 +1,5 @@
+package com.boot.roy_boot.repository;
+
+public interface ShipwreckRepository {
+
+}
